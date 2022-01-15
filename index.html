@@ -1,216 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bs">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json" />
     <title>VACLegal - Law Agency</title>
     <script src="https://kit.fontawesome.com/285eeb7ac6.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="vendors/faviconCroped/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="vendors/faviconCroped/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="vendors/faviconCroped/favicon-16x16.png" />
+
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="vendors/css/fluid.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="http://fonts.cdnfonts.com/css/best-signature-font" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/media-query.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" defer></script>
+    <script src="resources/js/script.js" defer></script>
 </head>
 
 <!-- Header -->
 
 <body>
-    <header>
-        <nav>
-            <p class="logo"><a href="index.html">&copy;VACLegal</a></p>
-            <ul class="main-nav">
-                <li><a href="#">Početna</a></li>
-                <li><a href="#">Nas tim</a></li>
-                <li><a href="#">Korisni linkovi</a></li>
-                <li><a href="#">Aktuelnosti</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
-        <div class="header-box">
-            <div class="header-text-box">
-                <h1>Advokatska firma</h1>
-                <h2>Pouzdan partner u pružanju pravne pomoći</h2>
-            </div>
-            <a href="#" class="btn btn-full">Napišite nam nešto!</a>
-        </div>
-    </header>
+    <div class="main-container">
+        <div class="main-wraper">
+            <header id="home" class="js--home">
+                <div class="nav animate__animated animate__fadeInDown">
+                    <nav>
+                        <img src="resources/img/vacLegal_logo_web.jpg" alt="VacLegal Logo" class="logo-small animate__animated animate__backInRight" />
+                        <a href="#" class="toggle-btn">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
+                        <ul class="main-nav animate__animated animate__backInLeft">
+                            <li>
+                                <a href="#home"><i class="fa fa-home"></i>Početna</a>
+                            </li>
+                            <li>
+                                <a href="#about-us" class="active"><i class="fa fa-address-card"></i>O Nama</a
+                  >
+                </li>
+                <li>
+                  <a href="#team"><i class="fa fa-users"></i>Tim</a>
+                            </li>
+                            <li>
+                                <a href="#news"><i class="fa fa-newspaper"></i>Aktuelnosti</a>
+                            </li>
+                            <li>
+                                <a href="#location"><i class="fa fa-map-marker"></i>Lokacije</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact"><i class="fa fa-phone"></i>Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-textbox">
+                    <h2 class="home-1">
+                        POUZDAN I POSVEĆEN PARTNER U PRUŽANJU PRAVNE POMOĆI !
+                    </h2>
+                    <p class="header-para">
+                        Nastojimo da usluga koju pružamo prevaziđe čisto pravnu analizu i da pronalaženjem komercijalnih rješenja zadovoljimo sve potrebe naših klijenata. Savršenim omjerom cijene i kvaliteta uspijevamo odgovoriti kompleksnim zahtjevima današnjih tržišnih uslova.
+                    </p>
+                </div>
+            </header>
 
-    <!-- About section -->
+            <!-- About section -->
 
-    <section class="about-section">
-        <div class="row">
-            <div class="col span_1_of_2 about-box">
-                <h2 class="about-heading">
-                    Advokatska firma fokusirana na Vaše zahtjeve!
-                </h2>
-                <p class="about-para">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla ante, auctor sit amet nisl ut, mollis tristique felis. Suspendisse eleifend eleifend tortor nec euismod. Mauris pharetra leo eu interdum maximus.
-                </p>
-                <p class="about-para">
-                    In sit amet faucibus ipsum. Maecenas posuere sapien enim, vel aliquet massa porta sit amet. Nulla ex nisl, dignissim blandit massa ac, dictum convallis augue. Etiam vel orci justo. Ut dolor elit, convallis a dignissim nec, aliquam sed justo.
-                </p>
-                <a href="#" class="btn btn-ghost">Više...</a>
-            </div>
-            <div class="col span_1_of_2 about-box">
-                <img src="resources/img/contract-img.jpg" alt="VACLegal women sign in contract - Photo by Pavel Danilyuk from Pexels" class="contract-image" />
-            </div>
-        </div>
-    </section>
+            <section class="about-section js--about-section" id="about-us">
+                <div class="row">
+                    <div class="col span_1_of_2 about-box js--about-box">
+                        <h2 class="about-heading">
+                            Advokatska firma fokusirana na Vaše zahtjeve!
+                        </h2>
+                        <p class="about-para">
+                            Zajedničku advokatsku kancelariju su osnovali Edina Rešidović i Džemil Sabrihafizović 1991. godine. Oboje se i danas aktivno bave advokaturom. Priznati su stručnjaci u specifičnim oblastima prava na lokalnom i međunarodnom nivou. Od 2007. godine sastav
+                            kancelarije se počeo širiti novim članovima koji su se specijalizirali za različite oblasti i proširili portfolio međunarodnih i domaćih klijenata.
+                        </p>
+                        <p class="about-para">
+                            Rad u Zajedničkoj advokatskoj kancelariji je timski i ima za cilj ostvarenje najboljih interesa klijenata. Kancelarija pruža klijentima usluge na teritoriji Bosne i Hercegovine u oblasti privrednog, upravnog, građanskog, radnog i krivičnog prava, u postupcima
+                            pred lokalnim sudovima i drugim nadležnim institucijama.
+                        </p>
+                    </div>
+                    <div class="col span_1_of_2 about-box js--about-box">
+                        <img class="contract-image" src="resources/img/contract-img.jpg" alt="VACLegal women sign in contract - Photo by Pavel Danilyuk from Pexels" />
+                    </div>
+                </div>
+            </section>
 
-    <!-- Work section -->
+            <!-- Team section -->
 
-    <section class="work-section">
-        <div class="row">
-            <h2 class="section-heading">Naš Posao</h2>
-            <h3 class="section-sub-heading">
-                Praesent id elit ac lacus ornare vulputate.
-            </h3>
-        </div>
-        <ul class="work-portfolio clearfix">
-            <li>
-                <figure class="portfolio-image">
-                    <img src="resources/img/konsultativne-usluge.jpg" alt="Consultations " />
-                    <p class="work-para">Konsultativne usluge</p>
-                </figure>
-            </li>
-            <li>
-                <figure class="portfolio-image">
-                    <img src="resources/img/sporovi-osiguranja.jpg" alt="Insurance disputes" />
-                    <p class="work-para">Sporovi osiguranja</p>
-                </figure>
-            </li>
-            <li>
-                <figure class="portfolio-image">
-                    <img src="resources/img/ugovori-fizicka-poslovna-lica.jpg" alt="Contracs" />
-                    <p class="work-para">Ugovori za fizička i poslovna lica</p>
-                </figure>
-            </li>
-            <li>
-                <figure class="portfolio-image">
-                    <img src="resources/img/legalizacija-potpisa.jpg" alt="Legalization of signatures" />
-                    <p class="work-para">Legalizacija potpisa</p>
-                </figure>
-            </li>
-        </ul>
-    </section>
+            <section class="team-section" id="team">
+                <div class="row">
+                    <h2 class="section-heading">Naš Tim</h2>
+                    <h3 class="section-sub-heading">Osobe kojima će te vjerovati.</h3>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_4 team-box first-box">
+                        <div class="team-img-wraper">
+                            <img src="resources/img/client-1.1.jpg" alt="Fata Mujic" />
+                        </div>
+                        <div class="team-bio">
+                            <h4 class="team-heading">Edina Rešidović</h4>
+                            <p class="team-para">
+                                Edina Rešidović je priznat stručnjak iz oblasti krivičnog prava, a posebno u postupcima koji se odnose na primjenu međunarodnog ratnog i humanitarnog prava. Kao glavni branilac, bila je angažovana u više različitih predmeta pred skupovima u organizaciji
+                                UNDP-a, OSCE i OKO. Prije osnivanja Advokatske kancelarije, radila je kao Zamjenik Okružnog javnog tužioca u Sarajevu. Bila je Sekretar za zakonodavstvo u Vladi Republike Bosne i Hercegovine.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_4 team-box">
+                        <div class="team-img-wraper">
+                            <img src="resources/img/client-2.2.jpg" alt="Fata Mujic" />
+                        </div>
+                        <div class="team-bio">
+                            <h4 class="team-heading">Dino Sabrihafizović</h4>
+                            <p class="team-para">
+                                Dino Sabrihafizović radi u Zajedničkoj advokatskoj kancelariji od 2005. godine, a od 2007. godine radi kao advokat. Njegov primarni angažman su oblasti transakcija i privrede, uključujući postupke spajanja i pripajanja društava, te oblast zaštite ličnih
+                                podataka. Prije dolaska u Zajedničku kancelariju, radio je u Ministarstvu unutrašnjih poslova i kao asistent u timu odbrane pred Međunarodnim krivičnim sudom za bivšu Jugoslaviju u Hagu. G-din. Sabrihafizović je diplomirao
+                                na Pravnom fakultetu u Sarajevu 2002. godine. Član je Advokatske komore Federacije BiH. Član je Nadzornog odbora Investicijskog fonda „prevent INVEST“ d.d. Sarajevo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_4 team-box">
+                        <div class="team-img-wraper">
+                            <img src="resources/img/client-3.jpg" alt="Fata Mujic" />
+                        </div>
+                        <div class="team-bio">
+                            <h4 class="team-heading">Džemil Sabrihafizović</h4>
+                            <p class="team-para">
+                                „Džemil Sabrihafizović specijaliziran je za oblast poslovnog i upravnog prava, te zastupa klijente pred lokalnim sudovima u kompleksnim postupcima. Advokat Sabrihafizović ima značajno iskustvo u pravnom savjetovanju i zastupanju klijenata u složenim transakcijama
+                                kao što su postupci privatizacije, zajedničkog ulaganja, spajanja i preuzimanja društava, direktnog ulaganja, te postupci u vezi sa nelojalnom konkurencijom i postupci koji se odnose na javne nabavke. G-din Sabrihafizović
+                                je u više navrata bio angažovan kao konsultant na projektima izrade zakonskih i podzakonskih akata. Bio je član Upravnog odbora BH Telecoma. Prije osnivanja Advokatske kancelarije, 20 godina je radio kao visoki državni
+                                službenik, na čelu Zavoda za javnu upravu u Bosni i Hercegovini. U periodu od 1989. do 1991. bio je savjetnik u Vladi Republike Bosne i Hercegovine.“
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_4 team-box">
+                        <div class="team-img-wraper">
+                            <img src="resources/img/female-lawyer.jpg" alt="Fata Mujic" />
+                        </div>
+                        <div class="team-bio">
+                            <h4 class="team-heading">Jesenka Rešidović</h4>
+                            <p class="team-para">
+                                Jesenka Rešidović, LL.M., rođena u Sarajevu, gdje trenutno živi i radi kao advokat u okviru Zajedničke advokatske kancelarije Rešidović-Sabrihafizović. Završila je Pravni fakultet Univerziteta u Sarajevu i magistrirala iz oblasti međunarodnog i evropskog
+                                prava na Pravnom fakultetu Univerziteta u Amsterdamu. Od 2004. do 2009. godine bila je angažovana u nekoliko predmeta pred Međunarodnim krivičnim tribunalom za bivšu Jugoslaviju (MKSJ) u Hagu, najprije kao volonter, a zatim
+                                i kao pravni asistent i case-manager za timove odbrane u nekoliko predmeta ratnih zločina i predmeta nepoštivanja suda vođenih pred MKSJ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Service section -->
+            <!-- NEWS SECTION -->
 
-    <section class="services-section">
-        <div class="row">
-            <h2 class="section-heading">Naše Usluge</h2>
-            <h3 class="section-sub-heading">
-                Praesent id elit ac lacus ornare vulputate.
-            </h3>
-        </div>
-        <div class="row">
-            <div class="col span_1_of_4 service-box">
-                <i class="fas fa-money-check-alt big-icon"></i>
-                <h4 class="service-heading">Finansisko pravo</h4>
-                <p class="service-para">Donec bibendum feugiat interdum.</p>
-                <a href="#" class="service-link">Više...</a>
-            </div>
-            <div class="col span_1_of_4 service-box">
-                <i class="fas fa-globe big-icon"></i>
-                <h4 class="service-heading">Međunarodno</h4>
-                <p class="service-para">Donec bibendum feugiat interdum.</p>
-                <a href="#" class="service-link">Više...</a>
-            </div>
-            <div class="col span_1_of_4 service-box">
-                <i class="fas fa-briefcase big-icon"></i>
-                <h4 class="service-heading">Radno pravo</h4>
-                <p class="service-para">Donec bibendum feugiat interdum..</p>
-                <a href="#" class="service-link">Više...</a>
-            </div>
-            <div class="col span_1_of_4 service-box">
-                <i class="fas fa-gavel big-icon"></i>
-                <h4 class="service-heading">Građansko pravo</h4>
-                <p class="service-para">Donec bibendum feugiat interdum.</p>
-                <a href="#" class="service-link">Više...</a>
-            </div>
-        </div>
-    </section>
+            <section class="news-section" id="news">
+                <div class="row">
+                    <h2 class="section-heading">Aktuelnosti</h2>
+                    <h3 class="section-sub-heading">Novosti sa naše stranice</h3>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_4 news-box">
+                        <h4 class="news-heading">Web Stranica</h4>
+                        <p class="news-para">
+                            Poštovani posjetioci, u prilici smo da Vam predstavimo našu web stranicu na kojoj ćemo prezentovati naše usluge i aktivnosti…
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Partners section -->
+            <!-- Loction section -->
 
-    <section class="partners-section">
-        <div class="row">
-            <h2 class="section-heading">Reference</h2>
-            <h3 class="section-sub-heading">
-                Radili smo sa nekim najpoznatijim i veoma uspješnim kompanijama u Bosni i Hercegovini. <br /> Pogledajte koje su to kompanije:
-            </h3>
-        </div>
-        <div class="row">
-            <div class="col span_1_of_4">
-                <img class="partner-logo" src="resources/img/brand-logo-1.png" alt="Brand Logo" />
-            </div>
-            <div class="col span_1_of_4">
-                <img class="partner-logo" src="resources/img/brand-logo-2.jpg" alt="Brand Logo" />
-            </div>
-            <div class="col span_1_of_4">
-                <img class="partner-logo" src="resources/img/brand-logo-3.jpg" alt="Brand Logo" />
-            </div>
-            <div class="col span_1_of_4">
-                <img class="partner-logo" src="resources/img/brand-logo-4.jpg" alt="Brand Logo" />
-            </div>
-        </div>
+            <section class="location-section js--location" id="location">
+                <div class="row">
+                    <h2 class="section-heading">Lokacije</h2>
+                    <div class="section-sub-heading"></div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_2 location sarajevo map">
+                        <!-- Google map -->
+                        <div class="col span_1_of_2 location-text-center">
+                            <iframe class="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.4966975666493!2d18.344531315013008!3d43.84553274799101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c97e49292769%3A0x988845800f196c8d!2sTrg%20me%C4%91unarodnog%20prijateljstva%2025%2C%20Sarajevo%2071000!5e0!3m2!1sbs!2sba!4v1633894210034!5m2!1sbs!2sba"
+                                width="250" height="150" style="border: 0" allowfullscreen="" loading="lazy">
+                </iframe>
+                        </div>
+                        <div class="col span_1_of_2 location-text-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>
+                                Trg Međunarodnog Prijateljstva 25 <br /> Sarajevo, BiH
+                            </h4>
+                        </div>
+                        <div class="col span_1_of_2 location-text-center">
+                            <i class="fas fa-phone"></i>
+                            <h4>+387 033 123456</h4>
+                        </div>
+                        <div class="col span_1_of_2 location-text-center">
+                            <i class="far fa-envelope"></i>
+                            <h4>vaclegal@gmail.com</h4>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_2 location ljubuski map">
+                        <!-- Google map -->
+                        <div class="col span_1_of_2 location-text-center">
+                            <iframe class="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.8884799206567!2d17.541790590524858!3d43.190850771218116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134b11d94f3fb093%3A0xd7df8cd075b9da32!2zVG9taXNsYXZhIEl2xI1pxIdhLCBManVidcWha2k!5e0!3m2!1sbs!2sba!4v1635153204326!5m2!1sbs!2sba"
+                                width="250" height="150" style="border: 0" allowfullscreen="" loading="lazy">
+                </iframe>
+                        </div>
+                        <div class="col span_1_of_2 location-text-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>
+                                Tomislava Ivičića 2 <br /> Ljubuški, BiH
+                            </h4>
+                        </div>
+                        <div class="col span_1_of_2 location-text-center">
+                            <i class="fas fa-phone"></i>
+                            <h4>+387 036 987654</h4>
+                        </div>
+                        <div class="col span_1_of_2 location-text-center">
+                            <i class="far fa-envelope"></i>
+                            <h4>vaclegal.ljubuski@gmail.com</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <div class="row">
-            <div class="col span_1_of_4">
-                <img class="partner-logo" src="resources/img/brand-logo-5.jpg" alt="Brand Logo" />
-            </div>
-            <div class="col span_1_of_4">
-                <img class="partner-logo" src="resources/img/brand-logo-6.jpg" alt="Brand Logo" />
-            </div>
-            <div class="col span_1_of_4">
-                <img class="partner-logo" src="resources/img/brand-logo-7.jpg" alt="Brand Logo" />
-            </div>
-            <div class="col span_1_of_4">
-                <img class="partner-logo" src="resources/img/brand-logo-8.jpg" alt="Brand Logo" />
-            </div>
-        </div>
-    </section>
+            <!-- Contact section -->
 
-    <!-- TESTIMONIAL SECTION -->
+            <section class="contact-section js--contact" id="contact">
+                <div class="row">
+                    <h2 class="contact-heading">Kontaktirajte nas!</h2>
+                </div>
+                <div class="row">
+                    <!-- Stavio sam svoj mail sennaddzihanic@gmail.com za probu! -->
+                    <form action="https://formsubmit.co/b681126fda3e7520d3e3174efd83af2d" method="POST" class="contact-form">
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display: none" />
 
-    <section class="testimonials-section">
-        <div class="row">
-            <h2 class="testimonial-heading">Komentari Klijenata</h2>
-        </div>
-        <div class="row">
-            <div class="col span_1_of_3 testimonial-box">
-                <blockquote>
-                    Maecenas ultricies aliquam metus, a rhoncus nisl imperdiet vitae. Nunc varius euismod libero ac blandit.
-                </blockquote>
-                <cite>
-                 <img src="resources/img/client-1.1.jpg" alt="Fata Mujic" />
-                Fata Mujic
-                </cite>
-            </div>
-            <div class="col span_1_of_3 testimonial-box">
-                <blockquote>
-                    Maecenas ultricies aliquam metus, a rhoncus nisl imperdiet vitae. Nunc varius euismod libero ac blandit.
-                </blockquote>
-                <cite>
-                 <img src="resources/img/client-2.2.jpg" alt="Mujo Mujic" />
-                 Mujo Mujic
-                </cite>
-            </div>
-            <div class="col span_1_of_3 testimonial-box">
-                <blockquote>
-                    Maecenas ultricies aliquam metus, a rhoncus nisl imperdiet vitae. Nunc varius euismod libero ac blandit.
-                </blockquote>
-                <cite>
-                 <img src="resources/img/client-3.jpg" alt="Suljo Suljic" />
-                Suljo Suljic
-                </cite>
-            </div>
-        </div>
-    </section>
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="_captcha" value="false" />
 
-    <section class="">
+                        <!-- Mail subject -->
+                        <input type="hidden" name="_subject" value="Nova poruka klijenta sa web stranice!" />
 
-    </section>
-</body>
+                        <!-- Success message link -->
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/resources/success.html" />
 
+                        <div class="row">
+                            <div class="col span_1_of_3 contact-label">
+                                <label for="name">Ime i Prezime</label>
+                            </div>
+                            <div class="col span_2_of_3">
+                                <input type="text" name="Name" id="name" placeholder="Ime i Prezime..." required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span_1_of_3 contact-label">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span_2_of_3">
+                                <input type="email" name="Email" id="email" placeholder="Vaš email..." required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span_1_of_3 contact-label">
+                                <label for="message">Pitanja i komentari</label>
+                            </div>
+                            <div class="col span_2_of_3">
+                                <textarea name="Message" id="message" placeholder="Vaša poruka ili pitanje..." required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span_1_of_3">&nbsp;</div>
+                            <div class="col span_2_of_3">
+                                <input type="submit" value="Pošalji!" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer section -->
+
+            <footer>
+                <div class="row">
+                    <div class="col span_1_of_2">
+                        <ul class="footer-nav">
+                            <li><a href="#home">Početna</a></li>
+                            <li><a href="#about-us">O Nama</a></li>
+                            <li><a href="#team">Tim</a></li>
+                            <li><a href="#news">Aktuelnosti</a></li>
+                        </ul>
+                    </div>
+                    <div class="col span_1_of_2">
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://hr-hr.facebook.com/" target="_blank"><i class="fab fa-facebook"></i
+                  ></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i
+                  ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>
+                        ©Copyright 2021. All Rights Reserved – Designed and Developed by&nbsp;
+                        <span class="footer-copy"><a
+                  href="https://github.com/Senad82"
+                  target="_blank"
+                  rel="noopener"
+                  >InTheHouse</a
+                ></span
+              >
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
