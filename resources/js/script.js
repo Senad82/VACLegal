@@ -45,27 +45,27 @@ $(document).ready(function() {
         });
 
 });
-
+/* Hamburger menu button */
 const toggleButton = document.getElementsByClassName('toggle-btn')[0]
 const navbarLinks = document.getElementsByClassName('main-nav')[0]
 const navFull = document.getElementsByClassName('nav')[0]
 const navBar = document.getElementsByClassName('toggle-btn')[0]
 const headerText = document.getElementsByClassName('header-textbox')[0]
 
-toggleButton.addEventListener('click', () => {
+toggleButton.addEventListener('click', () => { //Event listener for hamburger menu
     navbarLinks.classList.toggle('active');
     navFull.classList.toggle('active');
     navBar.classList.toggle('active');
     headerText.classList.toggle('active')
 });
 
-const newHeaderLoc = document.createElement("h3");
+const newHeaderLoc = document.createElement("h3"); // insert h3 element into location map
 newHeaderLoc.classList.add("header-loc");
-const contentSa = `Sarajevo`;
+const contentSa = `Sarajevo`; //Insesrted content
 newHeaderLoc.append(contentSa);
-const newHeaderLocTwo = document.createElement("h3");
+const newHeaderLocTwo = document.createElement("h3"); // insert h3 emenet into map
 newHeaderLocTwo.classList.add("header-locTwo");
-const contentLju = `Ljubuški`;
+const contentLju = `Ljubuški`; //Inserted content
 newHeaderLocTwo.append(contentLju);
 
 
