@@ -11,13 +11,13 @@
            margin-top: 100px;
        }
    }
-   /* ==============  GO FULL WIDTH AT LESS THAN 1280 PIXELS =================*/
+   /* ==============  GO FULL WIDTH AT LESS THAN 1280 PIXELS =================
    
    @media only screen and (max-width:1280px) {
        .main-wraper {
            margin-left: 62px;
        }
-   }
+   } */
    /* ==============  GO FULL WIDTH AT LESS THAN 1200 PIXELS =================*/
    
    @media only screen and (max-width:1200px) {
@@ -25,9 +25,9 @@
        body {
            font-size: 14px;
        }
-       .main-wraper {
+       /* .main-wraper {
            margin-left: 60px;
-       }
+       } */
        .about-box,
        .section-heading,
        .contact-heading {
@@ -48,9 +48,9 @@
        body {
            font-size: 12px;
        }
-       .main-wraper {
+       /* .main-wraper {
            margin-left: 50px !important;
-       }
+       } */
        .nav {
            height: 75px;
            padding: 0;
@@ -117,9 +117,9 @@
        body {
            font-size: 10px;
        }
-       .main-wraper {
+       /* .main-wraper {
            margin-left: 40px !important;
-       }
+       } */
        header {
            height: 50em;
            transition: all .2s ease-in-out;
@@ -218,9 +218,9 @@
        body {
            font-size: 8px;
        }
-       .main-wraper {
+       /* .main-wraper {
            margin-left: 25px !important;
-       }
+       } */
        .nav {
            background: transparent;
        }
@@ -347,9 +347,9 @@
    /* ==============  GO FULL WIDTH AT LESS THAN 375 PIXELS =================*/
    
    @media only screen and (max-width:375px) {
-       .main-wraper {
+       /* .main-wraper {
            margin-left: 20px !important;
-       }
+       } */
        .team-box {
            width: 90%;
            flex-direction: column;
