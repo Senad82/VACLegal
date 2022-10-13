@@ -347,9 +347,9 @@
    /* ==============  GO FULL WIDTH AT LESS THAN 375 PIXELS =================*/
    
    @media only screen and (max-width:375px) {
-       /* .main-wraper {
-           margin-left: 20px !important;
-       } */
+       .main-wraper {
+           max-width: 90%;
+       }
        .team-box {
            width: 90%;
            flex-direction: column;
