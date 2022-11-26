@@ -131,9 +131,6 @@
        .toggle-btn {
            display: flex;
        }
-       .toggle-btn.active {
-           top: 9em;
-       }
        .fa {
            display: none;
        }
